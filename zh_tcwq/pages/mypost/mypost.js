@@ -13,7 +13,13 @@ Page({
         countries: [ "本地", "全国" ],
         countryIndex: 0,
         xzdq: !1,
-        stick:["置顶一天","置顶一周","置顶一个月"],
+        // stick:["置顶一天","置顶一周","置顶一个月"],
+        top_del_jf:11,
+        stick:[
+            {"type":1,"id":'0',"array":"置顶一天（消费","积分":11,"num":1},
+            {"type":2,"id":'0',"array":"置顶一周（消费","积分":77,"num":7},
+            {"type":3,"id":'0',"array":"置顶一个月（消费","积分":"","num":30},
+        ],
         isShowToast:false
     },
     bindCountryChange: function(t) {
@@ -173,7 +179,8 @@ Page({
           c = 0,
          r = o,
         l = t.currentTarget.dataset.id, u = 0 == e.data.countryIndex ? "本地" : "全国版", d = wx.getStorageSync("city");
-		e.setData({ xfid: t.currentTarget.dataset.id})
+        // e.setData({ xfid: t.currentTarget.dataset.id})
+        let jfpoint = t.currentTarget.dataset.point
 		console.log(e)
         wx.showModal({
             title: "提示",
@@ -188,10 +195,11 @@ Page({
             url: "entry/wxapp/TzXf",
             cachetime: "0",
             data: {
-                id: l,
-                type: r,
+                id: e.data.xfid,
+                type: l,
                 cityname: u,
-                cityname2: d
+                cityname2: d,
+                jfpoine:jfpoint
             },
             success: function(t) {
 				if(t.data.code == 200){
@@ -319,8 +327,11 @@ Page({
             success: function(t) {
                 console.log(t);
                 var e = t.data;
-                for (var a in e) 1 == e[a].type ? e[a].array = "置顶一天（收费" : 2 == e[a].type ? e[a].array = "置顶一周（收费" : 3 == e[a].type && (e[a].array = "置顶一月（收费");
+                // for (var a in e) 1 == e[a].type ? e[a].array = "置顶一天（收费" : 2 == e[a].type ? e[a].array = "置顶一周（收费" : 3 == e[a].type && (e[a].array = "置顶一月（收费");
                 console.log(e)
+                o.setData({
+                    "top_del_jf":e.top_del_jf
+                })
             }
         }), wx.getSystemInfo({
             success: function(t) {
