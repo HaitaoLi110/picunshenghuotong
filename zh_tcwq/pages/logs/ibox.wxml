@@ -1,0 +1,56 @@
+<view class="container">
+	<form class="forms" catchsubmit="formSubmit">
+		<block  wx:for="{{set}}" wx:for-item="item">
+			<view class="ipt-wrap" wx:if="{{item.type== 'text'  || item.type== 'number'}}">
+
+				<label for="" class="font14">{{item.name}} ：</label>
+				<view class="opera">
+					<input type="{{item.type}}" bindblur="req" value="{{item.value}}" maxlength="{{item.type=='number'?11:''}}" name="{{index}}" class="ml40 flex1"  required="true"></input>
+						
+				</view>
+				
+			</view>
+			<view class="ipt-wrap border-b flex ai-center"  wx:if="{{item.type == 'radio' }}">
+				<label for="" class="font14">{{item.name}}:</label>
+				 <view  >
+					   <radio-group bindchange="radioChange" name="{{index}}">
+						  <view style="display: inline-block; margin-right: 5rpx;"  wx:for="{{item.xuan}}" wx:for-item="items" wx:key="{{items.value}}">
+							<radio value="{{items.value}}"  checked="{{items.checked}}"/>
+							<label style="display: inline;">{{items.name}}</label>
+							  
+						  </view>
+						</radio-group>
+					</view>
+			</view>
+			<view class="ipt-wrap border-b flex ai-center"  wx:if="{{ item.type == 'checkbox'}}">
+				<label for="" class="font14">{{item.name}}:</label>
+				 <view>
+					   <checkbox-group bindchange="checkboxChange" name="{{index}}">
+						  <view style="display: inline-block;margin-right: 5rpx;"  wx:for="{{item.xuan}}" wx:for-item="items" wx:key="{{items.value}}">
+							<checkbox value="{{items.value}}" checked="{{items.checked}}"/>
+							<label style="display: inline;">{{items.name}}</label>
+						  </view>
+						</checkbox-group>
+					</view>
+			</view>
+			<view class="ipt-wrap border-b flex ai-center"  wx:if="{{ item.type == 'select'}}">
+				<label class="section__title">{{item.name}}:</label>
+				  <picker bindchange="bindPickerChange" value="{{item.value}}" range="{{item.xuan}}" name="{{index}}">
+				    <view class=" inline_b" >{{value}}
+				     {{dataindx !="" ? item.xuan[dataindx]:item.xuan[item.value]}}
+				    </view>
+				  </picker>
+			</view>
+			<view class="ipt-wrap border-b flex ai-center"  wx:if="{{ item.type == 'textarea'}}">
+				 <label >{{item.name}}:</label>
+				 <view class="inline_b">
+					 <input class="" type="text" name="{{index}}" value="{{item.value}}" ></input>
+					 <!-- <textarea wx:if="{{textarea}}" auto-height  bindblur="textBlur" name="{{index}}" value="{{item.value }}">{{item.value == 'null'?'':item.value}} </textarea>
+					 <view class="textarea" wx:if="{{textareaView}}" bindtap="textChang">{{item.value == null? " ":item.value}}</view> -->
+				 </view>
+				 
+			</view>
+		</block>
+		<button type="primary" formType="submit"> 提交</button>
+	</form>
+</view>

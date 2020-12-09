@@ -1,0 +1,42 @@
+.container{
+	padding: 20rpx;
+}
+.ipt-wrap{
+  min-height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: #eaeaea solid 1px;
+}
+.ipt-wrap label{
+  /* min-width: 120rpx; */
+  display: inline-block;
+  text-align: right;
+  float: left;
+  margin-right: 20rpx;
+}
+.icon-youjiantou{
+  position: relative;
+  top: 1rpx;
+}
+.textarea{
+	width: 615rpx;
+	min-width: 100rpx;
+  height: 100rpx !important;
+  line-height: 28rpx;
+}
+.red{
+	color: #f00;
+}
+.opera{
+	min-height: 100rpx;
+	line-height: 100rpx;
+	display: flex;
+	align-items: center;
+}
+.opera input{
+	/* height: 100%;
+	padding: 5rpx;
+	width: 100%; */
+}
+.inline_b{
+	display: inline-block;
+}
