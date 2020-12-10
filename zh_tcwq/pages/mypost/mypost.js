@@ -68,10 +68,11 @@ Page({
                 },
                 success: function(t) {
                     console.log(t);
-                    var e = Number(t.data.sx_money);
+                    var e = Number(0);
+                    var e_jf = Number(t.data.refresh_del_jf);
                     console.log(e), wx.showModal({
                         title: "提示",
-                        content: "刷新此帖子？",
+                        content: "消耗"+e_jf+"积分,刷新此帖子？",
                         confirmText: "确定刷新",
                         success: function(t) {
                             if (t.confirm) if (console.log("用户点击确定"), e <= 0) console.log("免费刷新"), app.util.request({
@@ -178,7 +179,7 @@ Page({
        // c = 0 == a ? i[o].money : i[o].money2,
           c = 0,
          r = o,
-        l = t.currentTarget.dataset.id, u = 0 == e.data.countryIndex ? "本地" : "全国版", d = wx.getStorageSync("city");
+        l = t.currentTarget.dataset.typeid, u = 0 == e.data.countryIndex ? "本地" : "全国版", d = wx.getStorageSync("city");
         // e.setData({ xfid: t.currentTarget.dataset.id})
         let jfpoint = t.currentTarget.dataset.point
 		console.log(e)
