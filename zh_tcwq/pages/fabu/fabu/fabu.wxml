@@ -1,5 +1,5 @@
 <include src="/zh_tcwq/pages/car/navbar.wxml"></include>
-<view class="pbnavbar">
+<view class="pbnavbar" wx:if="{{System.is_rz=='1'}}">
     <view class="header">
         <view class="header_text">免责声明：平台发布的所有信息只负责发布、展示，与平台本身无关，平台不负任何责任。</view>
     </view>
