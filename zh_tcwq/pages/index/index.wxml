@@ -1,5 +1,5 @@
 <include src="/zh_tcwq/pages/car/navbar.wxml"></include>
-<block wx:if="{{System.model == "1"}}">
+<block wx:if="{{System.model == '1'}}">
     <view class="big_border pbnavbar">
         <view class="search flex-center rel" style="background:{{System.color}}">
             <view class="search_dizhi flex-center">

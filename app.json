@@ -1,9 +1,10 @@
 {
-  "pages": [
-	  
-	   
-    "zh_tcwq/pages/index/Liar",
+  "pages": [ 
     "zh_tcwq/pages/index/index",
+    "zh_tcwq/pages/store/store",
+   
+    "zh_tcwq/pages/index/Liar",
+   
     "zh_tcwq/pages/index/getdl",
     "zh_tcwq/pages/distribution/yaoqing",
     "zh_tcwq/pages/distribution/wdtd",
@@ -19,7 +20,7 @@
     "zh_tcwq/pages/content/content",
     "zh_tcwq/pages/partner/partner",
     "zh_tcwq/pages/infodetial/infodetial",
-  "zh_tcwq/pages/store/store",
+ 
 	 "zh_tcwq/pages/fabu/fabu/fabu",
     "zh_tcwq/pages/fabu/edit/edit",
     "zh_tcwq/pages/sellerinfo/sellerinfo",

@@ -19,7 +19,7 @@
                 <view bindtap="tchhr" class="head_hhr flex-center" wx:if="{{System.is_hhr==1&&System.is_hhrqx==1&&UserInfo}}">
                     <image class="head_hhr1" mode="aspectFit" src="../image/myhz.png"></image>
                     <view class="head_hhr2" wx:if="{{MyDistribution.state=='2'}}">{{MyDistribution.name}}</view>
-                    <view class="head_hhr2" wx:else>加盟合伙人</view>
+                    <!-- <view class="head_hhr2" wx:else>加盟合伙人</view> -->
                     <image class="head_hhr3" mode="aspectFit" src="../image/baise.png"></image>
                 </view>
             </view>
