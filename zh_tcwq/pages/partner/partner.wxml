@@ -1,4 +1,4 @@
-<view class="header">
+<!-- <view class="header">
     <image mode="aspectFill" src="../image/partner.jpg" style="width:100%;height:100%"></image>
 </view>
 <view class="ad">
@@ -56,4 +56,4 @@
 </view>
 <view class="footer">
     <input type="submit" value="成为合伙人支付¥0.01"></input>
-</view>
+</view> -->

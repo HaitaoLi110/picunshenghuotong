@@ -190,14 +190,14 @@ App({
                         title_color2: "#888",
                         url: "/zh_tcwq/pages/type/type"
                     }, 
-                    // {
-                    //     logo: "/zh_tcwq/pages/image/fabu.png",
-                    //     logo2: "/zh_tcwq/pages/image/fabu.png",
-                    //     title: "发布",
-                    //     title_color: "#f44444",
-                    //     title_color2: "#888",
-                    //     url: "/zh_tcwq/pages/fabu/fabu/fabu"
-                    // }, 
+                    {
+                        logo: "/zh_tcwq/pages/image/fabu.png",
+                        logo2: "/zh_tcwq/pages/image/fabu.png",
+                        title: "发布",
+                        title_color: "#f44444",
+                        title_color2: "#888",
+                        url: "/zh_tcwq/pages/fabu/fabu/fabu"
+                    }, 
                     {
                         logo: "/zh_tcwq/pages/image/dianpu-foucs.png",
                         logo2: "/zh_tcwq/pages/image/dianpu.png",

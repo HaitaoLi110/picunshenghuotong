@@ -1,4 +1,4 @@
-<form bindreset="formReset" bindsubmit="formSubmit">
+<!-- <form bindreset="formReset" bindsubmit="formSubmit">
     <view class="head">
         <navigator class="text" openType="redirect" url="txmx">提现明细</navigator>
         <view>{{userinfo.commission}}</view>
@@ -34,7 +34,7 @@
         <view class="czhd">
             <swiper autoplay="true" circular="true" duration="500" interval="2000" style="height:90rpx;width:70vw;" vertical="true">
                 <swiper-item>
-                    <view>您的粉丝付费发布，置顶，刷新，入驻商户，加入合伙人等，立即获得佣金</view>
+                    <view>您的粉丝付费发布，置顶，刷新，入驻商户，立即获得佣金</view>
                 </swiper-item>
                 <swiper-item>
                     <view>注意：可用佣金满
@@ -45,7 +45,7 @@
         <image class="addright {{open?'show':''}}" src="../image/huise@2x.png"></image>
     </view>
     <view class="czhd1" hidden="{{!open}}">
-        <view>您的粉丝付费发布，置顶，刷新，入驻商户，加入合伙人等，立即获得佣金</view>
+        <view>您的粉丝付费发布，置顶，刷新，入驻商户，立即获得佣金</view>
         <view>注意：可用佣金满
       <text>{{system.tx_money}}元</text>后才能申请提现</view>
     </view>
@@ -143,4 +143,4 @@
         <rich-text nodes="{{fxset.tx_details}}"></rich-text>
     </scroll-view>
     <view bindtap="queren" class="queren">确定</view>
-</view>
+</view> -->

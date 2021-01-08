@@ -1,4 +1,4 @@
-<view class="yao">
+<!-- <view class="yao">
     <view class="yqbox">
         <view class="yheader" wx:if="{{img!=''}}">
             <image class="headerimg" src="{{url}}{{img}}"></image>
@@ -103,4 +103,4 @@
     <view bindtap="previewimg" class="kcrzxybd">
         <image src="{{code}}"></image>
     </view>
-</view>
+</view> -->

@@ -1,4 +1,4 @@
-<form bindreset="formReset" bindsubmit="formSubmit" reportSubmit="true">
+<!-- <form bindreset="formReset" bindsubmit="formSubmit" reportSubmit="true">
     <view class="integral">
         <view class="banner" wx:if="{{img!=''}}">
             <view class="swiper-container">
@@ -77,4 +77,4 @@
         <rich-text nodes="{{fx_details}}"></rich-text>
     </scroll-view>
     <view bindtap="queren" class="queren">确定</view>
-</view>
+</view> -->
